@@ -74,4 +74,17 @@ openpyxl
 
 ---
 
-*Generated to document and improve the original script.*
+## Converting into .pkl file
+
+```bash
+
+import pickle
+
+# Assuming your trained model is named 'model'
+filename = 'credit_risk_model.pkl'
+
+# Save model to file
+with open(filename, 'wb') as file:
+    pickle.dump(model, file)
+
+print("✅ Model saved successfully as credit_risk_model.pkl")
